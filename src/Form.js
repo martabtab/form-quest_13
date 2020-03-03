@@ -23,6 +23,7 @@ class Form extends React.Component {
       body: JSON.stringify(this.state)
     })
       .then(res => res.json())
+
       .then(res => {
         if (res.error) {
           alert(res.error);
